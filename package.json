@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules\\.bin\\cypress run",
-    "headtest":"npm run test -- --headed",
-    "chrometest":"npm run test -- --browser chrome",
-    "envConfig":"npm run test -- -- headed env url=www.google.com",
-    "paralleltest":"npm run test -- --browser chrome --parallel"
+    "headtest": "npm run test -- --headed",
+    "chrometest": "npm run test -- --browser chrome",
+    "envConfig": "npm run test -- -- headed env url=www.google.com",
+    "paralleltest": "npm run test -- --browser chrome --parallel"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "cypress": "^13.8.1"
   },
   "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-mochawesome-reporter": "^3.8.2"
   }
 }
