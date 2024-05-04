@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.8.1"
+    "cypress": "^13.8.1",
+    "@cypress/browserify-preprocessor": "latest"
   },
   "devDependencies": {
     "cypress-cucumber-preprocessor": "^4.3.1",
