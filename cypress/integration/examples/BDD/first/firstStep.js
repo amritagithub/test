@@ -48,6 +48,8 @@ expect(totalfinal).to.equal(sum)
 })
 
 Then('select the country and verify Thank you',()=>{
+    
+cy.get(':nth-child(4) > :nth-child(5) > .btn').click()
     cy.get('#country').type('India')
     cy.get('.suggestions > ul > li > a').click()
     cy.get('#checkbox2').click({force:true})
@@ -57,7 +59,8 @@ Then('select the country and verify Thank you',()=>{
         const actualText=message.text()
         expect(actualText.includes('Success')).to.be.true
 
-    })
+
+    }) })
 
 
 
@@ -67,7 +70,7 @@ When('I fill the form details',function(dataTable)
     cy.get('select').select(dataTable.rawTable[1][1])
 })
 
-Then('Then validate form behaviour',()=>
+Then('validate form behaviour',()=>
 {
     //cy.get(':nth-child(4) > .ng-pristine').should('have.value',this.data.name)
 
@@ -76,7 +79,7 @@ Then('Then validate form behaviour',()=>
 })
 
 
-})
+
 
 Then('Select the shop page',()=>
 {
